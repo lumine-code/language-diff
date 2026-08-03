@@ -29,8 +29,8 @@ describe("Diff grammars", () => {
     });
   });
 
-  describe("modern Tree-sitter parser", () => {
-    beforeEach(() => setConfigForLanguageMode("modern-tree-sitter"));
+  describe("Tree-sitter parser", () => {
+    beforeEach(() => setConfigForLanguageMode("tree-sitter"));
 
     it("parses the grammar", () => {
       const grammar = atom.grammars.grammarForScopeName("source.diff");
@@ -59,7 +59,7 @@ describe("Diff grammars", () => {
         "diff --git a/node_modules/node-pty/deps/winpty/src/winpty.gyp b/node_modules/node-pty/deps/winpty/src/winpty.gyp\n",
       );
 
-      expect(grammar.constructor.name).toBe("WASMTreeSitterGrammar");
+      expect(grammar.constructor.name).toBe("TreeSitterGrammar");
       expect(grammar.scopeName).toBe("source.diff");
     });
 

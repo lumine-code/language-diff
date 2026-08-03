@@ -1,7 +1,7 @@
 {
   "name": "Diff",
   "scopeName": "source.diff",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-diff",
   "injectionRegex": "^(diff|patch)$",
   "treeSitter": {
