@@ -1,4 +1,4 @@
-(comment) @comment.line.number-sign.diff @spell
+(comment) @comment.line.number-sign.diff @_IGNORE_.spell
 
 [
   (addition)
