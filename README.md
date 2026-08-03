@@ -1,0 +1,12 @@
+# language-diff
+
+Diff and patch file support.
+
+## Features
+
+- **Grammars**: provides Tree-sitter grammars built from [tree-sitter-diff](https://github.com/tree-sitter-grammars/tree-sitter-diff) and TextMate grammars maintained here.
+- **Syntax highlighting**: full grammar coverage for diff and patch files.
+
+## Contributing
+
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub. Any feedback is welcome!
