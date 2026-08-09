@@ -1,16 +1,16 @@
 function setConfigForLanguageMode(mode) {
-  atom.config.set("language.useTreeSitterParsers", mode !== "textmate");
+  lumine.config.set("language.useTreeSitterParsers", mode !== "textmate");
 }
 
 describe("Diff grammars", () => {
-  beforeEach(() => waitsForPromise(() => atom.packages.activatePackage("language-diff")));
+  beforeEach(() => waitsForPromise(() => lumine.packages.activatePackage("language-diff")));
 
   describe("TextMate parser", () => {
     let grammar = null;
 
     beforeEach(() => {
       setConfigForLanguageMode("textmate");
-      grammar = atom.grammars.grammarForScopeName("source.diff");
+      grammar = lumine.grammars.grammarForScopeName("source.diff");
     });
 
     it("parses the grammar", () => {
@@ -33,15 +33,15 @@ describe("Diff grammars", () => {
     beforeEach(() => setConfigForLanguageMode("tree-sitter"));
 
     it("parses the grammar", () => {
-      const grammar = atom.grammars.grammarForScopeName("source.diff");
+      const grammar = lumine.grammars.grammarForScopeName("source.diff");
       expect(grammar).toBeTruthy();
       expect(grammar.scopeName).toBe("source.diff");
     });
 
     it("tokenizes additions and deletions", async () => {
-      const editor = await atom.workspace.open("sample.diff");
+      const editor = await lumine.workspace.open("sample.diff");
       editor.setText("- line 1\n+ line 2\n");
-      const grammar = atom.grammars.grammarForScopeName("source.diff");
+      const grammar = lumine.grammars.grammarForScopeName("source.diff");
       editor.setGrammar(grammar);
       await editor.getBuffer().languageMode.ready;
 
@@ -54,7 +54,7 @@ describe("Diff grammars", () => {
     });
 
     it("is preferred for patch files", () => {
-      const grammar = atom.grammars.selectGrammar(
+      const grammar = lumine.grammars.selectGrammar(
         "patches/node-pty+1.1.0.patch",
         "diff --git a/node_modules/node-pty/deps/winpty/src/winpty.gyp b/node_modules/node-pty/deps/winpty/src/winpty.gyp\n",
       );
@@ -64,11 +64,11 @@ describe("Diff grammars", () => {
     });
 
     it("is injected into Markdown diff code blocks", async () => {
-      await atom.packages.activatePackage("language-gfm");
+      await lumine.packages.activatePackage("language-gfm");
 
-      const editor = await atom.workspace.open("sample.md");
+      const editor = await lumine.workspace.open("sample.md");
       editor.setText("```diff\n- line 1\n+ line 2\n```\n");
-      const grammar = atom.grammars.grammarForScopeName("source.gfm");
+      const grammar = lumine.grammars.grammarForScopeName("source.gfm");
       editor.setGrammar(grammar);
       await editor.getBuffer().languageMode.ready;
 

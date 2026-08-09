@@ -7,12 +7,12 @@ const path = require("path");
 
 describe("Diff sample fixtures", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-diff");
-    atom.config.set("language.useTreeSitterParsers", true);
+    await lumine.packages.activatePackage("language-diff");
+    lumine.config.set("language.useTreeSitterParsers", true);
   });
 
   it("parses sample.diff without error", async () => {
-    const editor = await atom.workspace.open(path.join(__dirname, "fixtures", "sample.diff"));
+    const editor = await lumine.workspace.open(path.join(__dirname, "fixtures", "sample.diff"));
     const languageMode = editor.getBuffer().getLanguageMode();
     await languageMode.ready;
 
