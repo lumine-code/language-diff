@@ -3,7 +3,9 @@ function setConfigForLanguageMode(mode) {
 }
 
 describe("Diff grammars", () => {
-  beforeEach(() => waitsForPromise(() => lumine.packages.activatePackage("language-diff")));
+  beforeEach(async () => {
+    await lumine.packages.activatePackage("language-diff");
+  });
 
   describe("TextMate parser", () => {
     let grammar = null;
