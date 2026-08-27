@@ -1,5 +1,5 @@
 function setConfigForLanguageMode(mode) {
-  lumine.config.set("language.useTreeSitterParsers", mode !== "textmate");
+  lumine.config.set("editor.useTreeSitterParsers", mode !== "textmate");
 }
 
 describe("Diff grammars", () => {

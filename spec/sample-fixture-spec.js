@@ -8,7 +8,7 @@ const path = require("path");
 describe("Diff sample fixtures", () => {
   beforeEach(async () => {
     await lumine.packages.activatePackage("language-diff");
-    lumine.config.set("language.useTreeSitterParsers", true);
+    lumine.config.set("editor.useTreeSitterParsers", true);
   });
 
   it("parses sample.diff without error", async () => {
