@@ -4,7 +4,7 @@ Diff and patch file support.
 
 ## Features
 
-- **Grammars**: provides Tree-sitter grammars built from [tree-sitter-diff](https://github.com/tree-sitter-grammars/tree-sitter-diff) and TextMate grammars maintained here.
+- **Grammars**: provides a Tree-sitter grammar built from [tree-sitter-diff](https://github.com/tree-sitter-grammars/tree-sitter-diff).
 - **Syntax highlighting**: full grammar coverage for diff and patch files.
 
 ## Installation
