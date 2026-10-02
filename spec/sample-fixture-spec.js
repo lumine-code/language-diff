@@ -16,6 +16,6 @@ describe("Diff sample fixtures", () => {
     await languageMode.ready;
 
     expect(editor.getGrammar().scopeName).toBe("source.diff");
-    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
+    expect(languageMode.tree.rootNode.hasError).toBe(false);
   });
 });
