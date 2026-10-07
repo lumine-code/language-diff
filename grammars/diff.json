@@ -5,7 +5,7 @@
   "parser": "tree-sitter-diff",
   "injectionNames": ["diff", "patch", "udiff"],
   "treeSitter": {
-    "parserSource": "github:tree-sitter-grammars/tree-sitter-diff#v0.1.0",
+    "parserSource": "github:tree-sitter-grammars/tree-sitter-diff#ada384ac7bfc1307f32de474620120add29998fb",
     "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "diff.wasm",
     "highlightsQuery": "diff-highlights.scm"
