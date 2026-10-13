@@ -1,0 +1,16 @@
+{
+  "title": "language-diff",
+  "description": "Diff syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "298fcef3de24011563271b7809e5179b827a1f96",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "Diff syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 820
+    }
+  ]
+}

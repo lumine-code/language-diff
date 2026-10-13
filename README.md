@@ -7,6 +7,8 @@ Diff and patch file support.
 - **Grammars**: provides a Tree-sitter grammar built from [tree-sitter-diff](https://github.com/tree-sitter-grammars/tree-sitter-diff).
 - **Syntax highlighting**: full grammar coverage for diff and patch files.
 
+![Diff syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-diff` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-diff`.
