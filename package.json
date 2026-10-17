@@ -17,7 +17,8 @@
   "license": "MIT",
   "files": [
     "grammars",
-    "spec"
+    "spec",
+    "THIRD_PARTY_NOTICES"
   ],
   "bugs": {
     "url": "https://github.com/lumine-code/language-diff/issues"
