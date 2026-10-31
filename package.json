@@ -17,6 +17,7 @@
   "license": "MIT",
   "files": [
     "grammars",
+    "settings",
     "spec",
     "THIRD_PARTY_NOTICES"
   ],
@@ -36,5 +37,9 @@
     "eslint-plugin-n": "^18.5.0",
     "globals": "^17.13.0",
     "prettier": "^3.9.10"
-  }
+  },
+  "specPackages": [
+    "language-source",
+    "language-gfm"
+  ]
 }
