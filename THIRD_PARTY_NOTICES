@@ -2,6 +2,9 @@
 Source: https://github.com/tree-sitter-grammars/tree-sitter-diff
 Revision: ada384ac7bfc1307f32de474620120add29998fb
 
+Parser source: github:tree-sitter-grammars/tree-sitter-diff#ada384ac7bfc1307f32de474620120add29998fb
+Resolved commit: ada384ac7bfc1307f32de474620120add29998fb
+
 Original file: LICENSE
 
 MIT License
